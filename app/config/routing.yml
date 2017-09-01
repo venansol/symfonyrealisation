@@ -1,0 +1,8 @@
+venansol_site:
+    resource: "@VenansolSiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

@@ -1,0 +1,4 @@
+services:
+#    venansol_site.example:
+#        class: Venansol\SiteBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
