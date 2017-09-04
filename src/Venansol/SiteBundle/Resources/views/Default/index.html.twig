@@ -15,7 +15,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  {% block stylesheet  %} 
+    {% block javascript %}
+  <script src="{{ asset ("JS/index.js") }}";></script>
+   {% endblock %}
+    {% block stylesheet  %}
   <link rel="stylesheet" type="text/css" href="{{asset ("CSS/cssvenansol/venansol.css") }}">
  {% endblock %}
   <script type="text/javascript" src="JS/venansol.js"></script>
@@ -124,10 +127,13 @@
 
       <h1>cours individuel</h1>
 
-<p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
-
-<p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
-
+<p> Instruments et chant: Les cours sont individuels, hebdomadaires, d’une durée de
+    30 min. (30 cours /an)
+    L'école  vous propose des cours de saxophone,
+    guitare,piano, chant et batterie sont proposés aux enfants
+    comme aux adultes.
+    Ils sont adaptés en fonction du niveau de chacun, du débutant à l'expert.
+    <br> Un travail direct avec le professeur favorisant l'écoute  et l'autonomie</P>
 
   </div>
 
@@ -145,15 +151,15 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="{{ asset ('img/photo.jpg')}}" alt="Los Angeles">
+      <img src="{{ asset ('img/photo.jpg')}}" alt="Los Angeles" >
     </div>
 
     <div class="item">
-      <img src="{{ asset ('img/photo2.jpg')}}" alt="Chicago">
+      <img src="{{ asset ('img/photo2.jpg')}}" alt="Chicago" >
     </div>
 
     <div class="item">
-      <img src="{{ asset ('img/photo3.jpg')}}" alt="New York">
+      <img src="{{ asset ('img/photo1.jpg')}}" alt="New York" >
     </div>
   </div>
 
@@ -183,7 +189,7 @@
   <div class="col-sm-6">
 
      
-     <img src="{{ asset ('img/photo.jpg')}}" alt="Los Angeles">
+     <img src="{{ asset ('img/photo.jpg')}}" alt="Los Angeles" width="500px">
 
   </div>
 
@@ -191,14 +197,17 @@
 
       <h1>les cours collectif</h1>
 
-<p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
+      <p>   <strong>Formation musicale</strong> : obligatoire la première année de l’instrument
+    Les cours sont collectifs, hebdomadaires, d’une durée de 35 min. (20 cours /an) pour apprivoiser sereinement votre instrument </P>
 
+      <p>   <strong>L'éveil musical</strong>  se fait par petits groupes hebdomadaires, d’une durée de 35 min,
+          ce qui permet une écoute et un suivi individualisés. Le rythme de chaque enfant est ainsi respecté
+          et permet de s'approprié la musique a leur rythme. </P>
 
-<p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
-
-
-  <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
-
+      <p>      <strong>Ensemble Vocal</strong> : Propisce à l'antraide et la bonne ambiance
+          il se réunit 1 fois par semaine pour une durée de 1h pour les
+        jeunes, 1h30 pour les adultes (30 cours /an)
+      </p>
 
 
   </div>
@@ -217,10 +226,15 @@
 
       <h1>atelier</h1>
 
-  <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
+<p>
+        Les ateliers (musique actuelle, soul and jazz, percussions) se réunissent tous les 15
+    jours (15 séances / an)
 
-<p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit </P>
+    Jouez dans un groupe encadré par des musiciens professionnels. Choisissez votre répertoire.
 
+    Rigueur individuelle et plaisir collectif pour une expression musicale épanouissante !
+
+    Ouvert à tous types d'instruments et chanteurs/euses. </p>
 
   </div>
 
@@ -245,7 +259,7 @@
     </div>
 
     <div class="item">
-      <img src="{{ asset ('img/photo3.jpg')}}" alt="New York">
+      <img src="{{ asset ('img/photo1.jpg')}}" alt="New York">
     </div>
   </div>
 
@@ -270,100 +284,100 @@
 
  <h1>le bureau</h1>
 
- <div class="row"> 
+ <div class="row">
 
-       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item "> 
+       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
 
-           <div class="card h-100"> 
+           <div class="card h-100">
 
-             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a> 
+             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a>
 
-             <div class="card-body"> 
+             <div class="card-body">
 
-               <h4 class="card-title"> 
+               <h4 class="card-title">
 
-                <h2>Lorem Ipsum</h2> 
+                <h2>Lorem Ipsum</h2>
 
-               </h4> 
+               </h4>
 
-               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p> 
+               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p>
                     <p class="card-block" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit
                     </p>
-             </div> 
+             </div>
 
-           </div> 
+           </div>
 
-         </div> 
-       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item "> 
+         </div>
+       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
 
-           <div class="card h-100"> 
+           <div class="card h-100">
 
-             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a> 
+             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a>
 
-             <div class="card-body"> 
+             <div class="card-body">
 
-               <h4 class="card-title"> 
+               <h4 class="card-title">
 
-                <h2>Lorem Ipsum</h2> 
+                <h2>Lorem Ipsum</h2>
 
-               </h4> 
+               </h4>
 
-               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p> 
+               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p>
                     <p class="card-block" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit
                     </p>
-             </div> 
+             </div>
 
-           </div> 
+           </div>
 
-         </div> 
-       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item "> 
+         </div>
+       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
 
-           <div class="card h-100"> 
+           <div class="card h-100">
 
-             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a> 
+             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a>
 
-             <div class="card-body"> 
+             <div class="card-body">
 
-               <h4 class="card-title"> 
+               <h4 class="card-title">
 
-                <h2>Lorem Ipsum</h2> 
+                <h2>Lorem Ipsum</h2>
 
-               </h4> 
+               </h4>
 
-               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p> 
+               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p>
                     <p class="card-block" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit
                     </p>
-             </div> 
+             </div>
 
-           </div> 
+           </div>
 
-         </div> 
-       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item "> 
+         </div>
+       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item ">
 
-           <div class="card h-100"> 
+           <div class="card h-100">
 
-             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a> 
+             <a href="#"><img class="card-img-top" src="{{ asset ('img/bureaut.jpg')}}"  width="200px"alt=""></a>
 
-             <div class="card-body"> 
+             <div class="card-body">
 
-               <h4 class="card-title"> 
+               <h4 class="card-title">
 
-                <h2>Lorem Ipsum</h2> 
+                <h2>Lorem Ipsum</h2>
 
-               </h4> 
+               </h4>
 
-               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p> 
+               <p class="card-text">, illum tempora ex quae? Nihil, dolorem!</p>
                     <p class="card-block" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit quisquam veniam excepturi temporibus inventore corporis dicta sit
                     </p>
-             </div> 
+             </div>
 
-           </div> 
+           </div>
 
-         </div> 
+         </div>
 
 
 

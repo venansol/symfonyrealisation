@@ -50,10 +50,15 @@ background-repeat: repeat;
       padding-right:50px
 
   }
-img,
+  img{
+      border-radius: 15px;
+      overflow: hidden;
+
+  }
 .carousel .carousel-control {
   border-radius: 15px;
   overflow: hidden;
+width:300px;
 }
   #accueil{padding-top:50px;height:370px;color: black; background-color:#fff;}
 
@@ -81,6 +86,9 @@ img,
   width: 100%;
 }
 .carousel-inner{
-  width:100%;
+  width:550px;
+    height: 260px;
+
   max-height: 70000px !important;
+
 }
